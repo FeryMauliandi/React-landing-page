@@ -8,7 +8,7 @@ const Divisions = () => {
             id: 1,
             image: `${pathImage}1.png`,
             title: "Embedded System & Iot",
-            desc: "Gabungan perangkat keras dan lunak dalam satu perangkat untuk fungsi khusus yang saling terhubung melalui internet untuk berbagi data."
+            desc: "Gabungan perangkat keras dan lunak dalam satu perangkat untuk fungsi khusus yang saling terhubung melalui internet untuk berbagi data.",
         },
         {
             id: 2,
@@ -42,13 +42,13 @@ const Divisions = () => {
     return (
         <section className="pt-28 pb-32">
             <div className="container mx-auto">
-                <div className="text-center lg:-mt-[280px]">
+                <div className="text-center lg:-mt-[340px]">
                     <h1 id="divisions" className="font-bold text-[32px] text-dark mb-2" data-aos="zoom-in-down" data-aos-delay="50">Technical Divisions</h1>
                     <div className="flex flex-col lg:flex-row gap-y-8 items-center lg:justify-center lg:gap-x-40">
                         {list.map((item) => (
                             <Card key={item.id}>
                                 <Card.Header image={item.image} />      
-                                <Card.Body title={item.title} desc={item.desc} />      
+                                <Card.Body title={item.title} desc={item.desc}/>      
                             </Card> 
                         ))}
                     </div>

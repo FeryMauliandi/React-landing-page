@@ -7,6 +7,7 @@ import Aos from 'aos';
 import About from "./components/About";
 import Divisions from "./components/Divisions";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [navMobile, setNavMobile] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
     <About/>
     <Divisions/>
     <Contact/>
+    <Footer/>
   </div>
 }
 
