@@ -8,7 +8,7 @@ import Daftar from './components/Daftar.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <App/>
   },
   {

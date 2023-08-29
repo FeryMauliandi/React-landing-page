@@ -2,7 +2,7 @@ import Card from "./Card"
 import React from "react";
 
 const Divisions = () => {
-    const pathImage = "./public/div-image/"
+    const pathImage = "src/assets/images/"
     const list = [
         {
             id: 1,
