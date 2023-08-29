@@ -11,9 +11,9 @@ const Hero = () => {
                         <h2 className="text-[20px] lg:text-[24px] text-primary font-semibold mt-[150px] lg:mt-[150px] lg:mb-2">Halo, selamat datang</h2>
                         <h1 className="text-[28px] lg:text-[36px] max-w-[520px] font-extrabold mb-4 lg:mb-4">Tempat di mana para individu berkumpul untuk belajar dan berkompetisi bersama.</h1>
                         <h4 className="text-[16px] lg:text-[20px] max-w-[500px] font-medium mb-4 lg:mb-4">Mari bergabung dan menjadi bagian dari perjalanan luar biasa kami menuju keunggulan</h4>
-                        <Link to="/daftar" className="font-medium text-[20px] shadow-2xl bg-primary py-[10px] px-[55px] rounded-xl hover:bg-dark hover:text-primary">Daftar</Link>
+                        <Link to="/daftar" className="font-medium text-[20px] shadow-2xl bg-primary py-[8px] px-[55px] rounded-xl hover:bg-dark hover:text-primary">Daftar</Link>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="50" className="flex-1 lg:-mr-[300px] lg:mt-[150px]">
+                    <div data-aos="fade-left" data-aos-delay="50" className="flex-1 lg:-mr-[300px] mt-6 lg:mt-[150px]">
                         <img className="w-[350px] h-[350px] lg:w-[500px] lg:h-[500px]" src={Image} alt="" />
                     </div>
                 </div>
