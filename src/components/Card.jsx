@@ -10,14 +10,15 @@ const Card = (props) => {
     )
 };
 
-const Header = ({ image }) => {
+const Header = ( props ) => {
+    const { icons } = props;
     return (
-        <img src={image} alt="div" className="w-[100px] h-[100px] mt-8" />
+        <div className="text-8xl mt-4">{icons}</div>
     )
 };
 
 const Body = (props) => {
-    const { title, desc, to } = props;
+    const { title, desc } = props;
     return (
         <div className="px-4">
             <h1 className="text-[20px] py-4 font-semibold text-primary text-center">{title}</h1>

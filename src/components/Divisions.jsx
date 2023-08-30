@@ -1,24 +1,28 @@
 import Card from "./Card"
-import React from "react";
+import React from "react"
+import { BiChip } from "react-icons/Bi"
+import { MdSecurity } from "react-icons/Md"
+import { CgWebsite } from "react-icons/cg"
+import { GrUserAdmin } from "react-icons/gr"
+import { LiaDigitalTachographSolid } from "react-icons/lia"
 
 const Divisions = () => {
-    const pathImage = "src/assets/"
     const list = [
         {
             id: 1,
-            image: `${pathImage}1.png`,
+            icons: <BiChip/>,
             title: "Embedded System & Iot",
             desc: "Gabungan perangkat keras dan lunak dalam satu perangkat untuk fungsi khusus yang saling terhubung melalui internet untuk berbagi data.",
         },
         {
             id: 2,
-            image: `${pathImage}2.png`,
+            icons: <CgWebsite />,
             title: "Web & Mobile Development",
             desc: "Web development Membuat situs web untuk peramban. Mobile development Kembangkan aplikasi untuk perangkat mobile."
         },
         {
             id: 3,
-            image: `${pathImage}3.png`,
+            icons: <MdSecurity />,
             title: "Cyber Security",
             desc: "Upaya untuk melindungi sistem komputer, jaringan, dan data dari ancaman serangan siber seperti peretasan, malware, dan pencurian data."
         },
@@ -26,15 +30,15 @@ const Divisions = () => {
     const list2 = [
         {
             id: 4,
-            image: `${pathImage}4.png`,
+            icons: <LiaDigitalTachographSolid />,
             title: "Digital Creative",
-            desc: "Digital Creative: Kreativitas menggunakan teknologi digital untuk konten visual dan audio."
+            desc: "menciptakan karya kreatif menggunakan teknologi digital, seperti desain grafis, animasi, video, dan seni digital, dengan menggabungkan elemen kreatif dan alat-alat digital."
         },
         {
             id: 5,
-            image: `${pathImage}5.png`,
+            icons: <GrUserAdmin />,
             title: "Administration",
-            desc: "Administration: Manajemen tugas rutin dalam organisasi untuk mencapai tujuan."
+            desc: "pengelolaan, pengawasan, dan organisasi berbagai aktivitas serta sumber daya dalam suatu sistem atau organisasi guna mencapai tujuan dengan efisien dan efektif."
         },
 
     ];
@@ -47,7 +51,7 @@ const Divisions = () => {
                     <div className="flex flex-col lg:flex-row gap-y-8 items-center lg:justify-center lg:gap-x-40">
                         {list.map((item) => (
                             <Card key={item.id}>
-                                <Card.Header image={item.image} />      
+                                <Card.Header icons={item.icons} />      
                                 <Card.Body title={item.title} desc={item.desc}/>      
                             </Card> 
                         ))}
@@ -58,7 +62,7 @@ const Divisions = () => {
                     <div className="flex flex-col lg:flex-row gap-y-8 items-center lg:justify-center lg:gap-x-20">
                         {list2.map((item) => (
                             <Card key={item.id}>
-                                <Card.Header image={item.image} />      
+                                <Card.Header icons={item.icons} />      
                                 <Card.Body title={item.title} desc={item.desc} />      
                             </Card> 
                         ))}

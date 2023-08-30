@@ -2,7 +2,7 @@ import { AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineLinkedin } from "react-
 
 const Footer = () => {
     return (
-        <footer className="pt-24 pb-16 bg-primary" data-aos="fade-up" data-aos-delay="50">
+        <footer className="pt-12 pb-8 bg-primary" data-aos="fade-up" data-aos-delay="50">
             <div className="container mx-auto">
                 <div className="flex flex-wrap lg:justify-between">
                     <div className="mb-6">
@@ -15,9 +15,9 @@ const Footer = () => {
                         <a href="https://goo.gl/maps/QDJTjvvWnRWFaW4X9">Klik ini untuk lokasi</a>
                     </div>
                 </div>
-                <div className="w-full pt-2 border-t-2 border-dark">
+                <div className="w-full border-t-2 border-dark">
                     <div className="flex flex-wrap justify-center">
-                        <div className="flex items-center gap-x-10 mt-5 ">
+                        <div className="flex items-center gap-x-10 mt-4 ">
                             <a href="https://instagram.com/seulangateam?igshid=MzRlODBiNWFlZA==" className="text-4xl rounded-full border-2 border-blue-600 p-2 hover:bg-blue-600">
                                 <AiOutlineInstagram />
                             </a>
